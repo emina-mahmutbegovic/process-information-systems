@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-22T16:01:30.870Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="5Db4mzoBYjiS_4AgqRPO" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-22T16:51:18.180Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="4nTrN4SstQ0V1biUrZrx" version="22.1.3" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2560" dy="2062" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1783" dy="1625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -446,6 +446,24 @@
             <mxPoint x="29" y="110" as="sourcePoint" />
             <mxPoint x="330" y="-60" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="sVMZJbU4VuqMhcMFcMYX-192" value="&lt;b&gt;Pripada&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="178" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sVMZJbU4VuqMhcMFcMYX-193" value="&lt;b&gt;Se emituje&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="30" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sVMZJbU4VuqMhcMFcMYX-194" value="&lt;b&gt;Ima&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="178" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sVMZJbU4VuqMhcMFcMYX-195" value="&lt;b&gt;Uređuje&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="410" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sVMZJbU4VuqMhcMFcMYX-196" value="&lt;b&gt;Vodi&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="440" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sVMZJbU4VuqMhcMFcMYX-197" value="&lt;b&gt;Gostuje&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="515" y="398" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
