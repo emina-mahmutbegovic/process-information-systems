@@ -35,3 +35,4 @@ services:
     volumes:
       - ./liquibase/changelog:/liquibase/changelog
       - ./liquibase/migrations:/liquibase/migrations
+      - ./liquibase/test-data:/liquibase/test-data

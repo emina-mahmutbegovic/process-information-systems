@@ -2,37 +2,13 @@
   "databaseChangeLog": [
     {
       "include": {
-        "file": "../migrations/001-create-tv-date-table.sql",
+        "file": "../migrations/001-initialise-database.sql",
         "relativeToChangelogFile": true
       }
     },
     {
       "include": {
-        "file": "../migrations/001-create-tv-editor-table.sql",
-        "relativeToChangelogFile": true
-      }
-    },
-    {
-      "include": {
-        "file": "../migrations/001-create-tv-genre-table.sql",
-        "relativeToChangelogFile": true
-      }
-    },
-    {
-      "include": {
-        "file": "../migrations/001-create-tv-guest-table.sql",
-        "relativeToChangelogFile": true
-      }
-    },
-    {
-      "include": {
-        "file": "../migrations/001-create-tv-host-table.sql",
-        "relativeToChangelogFile": true
-      }
-    },
-    {
-      "include": {
-        "file": "../migrations/001-create-tv-show-table.sql",
+        "file": "../migrations/002-load-test-data.sql",
         "relativeToChangelogFile": true
       }
     }

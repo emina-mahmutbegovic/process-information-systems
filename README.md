@@ -9,7 +9,7 @@ Before you begin, ensure you have met the following requirements:
 #### Option 1
 ### Using docker-compose (the easiest way):
 1. Run `docker-compose up db -d`
-2. Run `docker-compose up liquibase -d`
+2. Run `docker-compose up liquibase`
 
 
 #### Option 2
