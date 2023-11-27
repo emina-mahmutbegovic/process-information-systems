@@ -23,7 +23,9 @@ services:
       - db
     command: >
       /bin/bash -c "
-        liquibase --search-path=../liquibase update --url=\"$$LIQUIBASE_URL?currentSchema=public\" --changelog-file=$$LIQUIBASE_CHANGELOG --username=$$LIQUIBASE_USERNAME --password=$$LIQUIBASE_PASSWORD
+        chmod 644 /liquibase/test-data/tv-date-test-data.csv;
+        liquibase --search-path=../liquibase update --url=\"$$LIQUIBASE_URL?currentSchema=public\" --changelog-file=$$LIQUIBASE_CHANGELOG --username=$$LIQUIBASE_USERNAME --password=$$LIQUIBASE_PASSWORD;
+        tail -f /dev/null;
       "
     environment:
       LIQUIBASE_URL: jdbc:postgresql://db:5432/postgres
@@ -35,4 +37,4 @@ services:
     volumes:
       - ./liquibase/changelog:/liquibase/changelog
       - ./liquibase/migrations:/liquibase/migrations
-      - ./liquibase/test-data:/liquibase/test-data
+      - ./liquibase/test-data:/liquibase/test-data:ro
