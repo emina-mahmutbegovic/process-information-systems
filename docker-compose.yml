@@ -16,6 +16,8 @@ services:
       - "5432:5432"
     networks:
       - migration-net
+    volumes:
+      - ./liquibase/test-data:/test-data
 
   liquibase:
     image: liquibase/liquibase:4.21.0
@@ -23,9 +25,7 @@ services:
       - db
     command: >
       /bin/bash -c "
-        chmod 644 /liquibase/test-data/tv-date-test-data.csv;
-        liquibase --search-path=../liquibase update --url=\"$$LIQUIBASE_URL?currentSchema=public\" --changelog-file=$$LIQUIBASE_CHANGELOG --username=$$LIQUIBASE_USERNAME --password=$$LIQUIBASE_PASSWORD;
-        tail -f /dev/null;
+        liquibase --search-path=../liquibase,test-data update --url=\"$$LIQUIBASE_URL?currentSchema=public\" --changelog-file=$$LIQUIBASE_CHANGELOG --username=$$LIQUIBASE_USERNAME --password=$$LIQUIBASE_PASSWORD;
       "
     environment:
       LIQUIBASE_URL: jdbc:postgresql://db:5432/postgres
@@ -37,4 +37,4 @@ services:
     volumes:
       - ./liquibase/changelog:/liquibase/changelog
       - ./liquibase/migrations:/liquibase/migrations
-      - ./liquibase/test-data:/liquibase/test-data:ro
+      - ./liquibase/test-data:/liquibase/test-data
