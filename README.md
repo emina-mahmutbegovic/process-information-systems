@@ -1,14 +1,30 @@
 # process-information-systems
+# TV Program Database Schema
+
+This repository implements a database schema for managing a TV program. The database includes tables for TV shows, genres, episodes, editors, hosts, guests, and the date and time of each show. The project provides SQL scripts for database creation, tables creation, and data seed with test data. Additionally, it includes a changelog file for the Liquibase application to manage database migrations and Docker files for running the application.
+
+## ER Model Diagram
+
+![ER Model Diagram](er_model.png)
+
+## Database Schema
+![Database Schema](er_model_baze.png)
 
 ## Prerequisite
 Before you begin, ensure you have met the following requirements:
 - You have installed the latest version of [Docker](https://docs.docker.com/get-docker/).
 
-## Local setup
-
+## Running the Application
+1. Clone the repository
+2. Navigate to the repository folder
+3.
 #### Option 1
 ### Using docker-compose (the easiest way):
-1. Run `docker-compose up db -d`
+1. Run `docker-compose up -d` 
+
+or
+
+1. Run `docker-compose up postgres_db -d`
 2. Run `docker-compose up liquibase`
 
 
@@ -41,12 +57,4 @@ You can use the following steps to find out the network on which your DB contain
 
 NOTE: The `docker-compose` file in the `root` directory can also be used for running migrations separately with: `docker-compose up --build liquibase`
 
-## Environment setup
-
-Following env variables must be provided:
-
-- POSTGRESDB_HOST=localhost
-- POSTGRESDB_PORT=5432
-- POSTGRESDB_DB=postgres
-- POSTGRESDB_USERNAME=admin
-- POSTGRESDB_PASSWORD=admin
+The TV program database will be accessible on `localhost` using the specified port.

@@ -28,7 +28,7 @@ fi
 liquibase --search-path=/home/root/app/liquibase \
           --logLevel=DEBUG \
           update \
-          --url="jdbc:postgresql://${POSTGRESDB_HOST:=db}:${POSTGRESDB_PORT:=5432}/${POSTGRESDB_DB:=postgres}?currentSchema=public" \
+          --url="jdbc:postgresql://${POSTGRESDB_HOST:=postgres_db}:${POSTGRESDB_PORT:=5432}/${POSTGRESDB_DB:=postgres}?currentSchema=public" \
           --changelog-file=changelog/changelog.json \
           --username="${POSTGRESDB_USERNAME:=postgres}" \
           --password="${POSTGRESDB_PASSWORD:=postgres}"

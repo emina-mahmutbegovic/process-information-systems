@@ -5,8 +5,8 @@ networks:
     driver: bridge
 
 services:
-  db:
-    container_name: db
+  postgres_db:
+    container_name: postgres_db
     image: postgres:12
     environment:
       - POSTGRES_USER=postgres
@@ -28,7 +28,7 @@ services:
         liquibase --search-path=../liquibase,test-data update --url=\"$$LIQUIBASE_URL?currentSchema=public\" --changelog-file=$$LIQUIBASE_CHANGELOG --username=$$LIQUIBASE_USERNAME --password=$$LIQUIBASE_PASSWORD;
       "
     environment:
-      LIQUIBASE_URL: jdbc:postgresql://db:5432/postgres
+      LIQUIBASE_URL: jdbc:postgresql://postgres_db:5432/postgres
       LIQUIBASE_USERNAME: postgres
       LIQUIBASE_PASSWORD: postgres
       LIQUIBASE_CHANGELOG: changelog/changelog.json
