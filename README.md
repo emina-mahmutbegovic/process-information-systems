@@ -57,4 +57,4 @@ You can use the following steps to find out the network on which your DB contain
 
 NOTE: The `docker-compose` file in the `root` directory can also be used for running migrations separately with: `docker-compose up --build liquibase`
 
-The TV program database will be accessible on `localhost` using the specified port.
+The TV program database will be accessible on `localhost` using the specified port 5432.
